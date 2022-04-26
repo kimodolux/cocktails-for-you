@@ -1,13 +1,14 @@
 {
-  "private": true,
+  "name": "lireddit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "yarn --cwd web dev",
+    "prettier": "prettier --write '**/*.{ts,json,js,tsx,graphql,md,yml,yaml,json}'"
   },
-  "dependencies": {
-    "next": "latest",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "prettier": "^2.6.2"
   }
 }
