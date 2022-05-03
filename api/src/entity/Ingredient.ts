@@ -15,7 +15,7 @@ export class Ingredient {
   @Column()
   title: string;
 
-  @ManyToMany(() => Recipe)
-  @JoinTable()
-  recipes: Recipe[];
+  // @ManyToMany(() => Recipe)
+  // @JoinTable()
+  // recipes: Recipe[];
 }

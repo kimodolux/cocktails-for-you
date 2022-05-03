@@ -1,15 +1,15 @@
 A cocktail recipe app
 
+TechstacK:
 
-TechstacK: 
+Frontend:
 
-
-Frontend: 
-* React Framework - Next.js
-* 
+- React Framework - Next.js
+-
 
 Backend:
-* Server - Node Express
-* API - Graphql/TypeGraphql
-* ORM - TypeOrm
-* Databse - Postgres
+
+- Server - Node Express
+- API - Graphql/TypeGraphql
+- ORM - TypeOrm
+- Databse - Postgres

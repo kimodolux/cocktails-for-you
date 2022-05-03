@@ -1,1 +1,0 @@
-Next JS App for Cocktails for you

@@ -18,13 +18,13 @@ export class Recipe {
   @Column()
   title: string;
 
-  @Column("text")
+  @Column()
   description: string;
 
-  @ManyToMany(() => Ingredient)
-  @JoinTable()
-  ingredients: Ingredient[];
+  // @ManyToMany(() => Ingredient)
+  // @JoinTable()
+  // ingredients: Ingredient[];
 
-  @ManyToOne(() => User, (user) => user.recipes)
-  author: User;
+  // @ManyToOne(() => User, (user) => user.recipes)
+  // author: User;
 }

@@ -12,7 +12,7 @@ export class User {
   @Column()
   lastName: string;
 
-  @Column("text", { array: true })
-  @OneToMany(() => Recipe, (recipe) => recipe.author)
-  recipes: Recipe;
+  // @Column("text", { array: true })
+  // @OneToMany(() => Recipe, (recipe) => recipe.author)
+  // recipes: Recipe;
 }
