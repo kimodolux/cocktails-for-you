@@ -3,14 +3,14 @@ import { gql } from "apollo-server-express";
 const typeDefs = gql`
   type Recipe {
     id: Int!
-    title: String
-    description: String
+    title: String!
+    description: String!
   }
 
   input RecipeInput {
-    id: Int!
-    title: String
-    description: String
+    id: Int
+    title: String!
+    description: String!
   }
 
   type Response {

@@ -5,6 +5,7 @@ import { graphqlHTTP } from "express-graphql";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import typeDefs from "./graphql/typeDefs";
 import resolvers from "./graphql/resolvers";
+import expressPlayground from "graphql-playground-middleware-express";
 
 const schema = makeExecutableSchema({
   typeDefs: typeDefs,
@@ -27,6 +28,8 @@ AppDataSource.initialize()
         graphiql: true,
       })
     );
+
+    app.get("/playground", expressPlayground({ endpoint: "/graphql" }));
 
     app.listen(port, () => {
       console.log(
